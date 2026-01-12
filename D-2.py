@@ -13,7 +13,8 @@ class Rectangle:
 
     def diagonal(self):
         # 対角線を計算: √(高さ² + 幅²)
-        return math.sqrt(self.height**2 + self.width**2)
+        result = math.sqrt(self.height**2 + self.width**2)
+        return round(result, 2)
 
 
 rectangle1 = Rectangle(height=5, width=6)
