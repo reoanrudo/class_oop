@@ -12,7 +12,8 @@ class Square:
 
     def diagonal(self):
         # 対角線を計算: 辺 × √2
-        return self.side * math.sqrt(2)
+        result = self.side * math.sqrt(2)
+        return round(result, 2)
 
 
 square1 = Square(side=1.5)

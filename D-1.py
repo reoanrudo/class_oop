@@ -1,3 +1,6 @@
+import math
+
+
 class Circle:
     def __init__(self, radius):
         # 半径を保存
@@ -5,11 +8,13 @@ class Circle:
 
     def area(self):
         # 面積を計算: π × r²
-        return 3.14 * self.radius ** 2
+        result = math.pi * self.radius**2
+        return round(result, 2)
 
     def perimeter(self):
         # 周囲長を計算: 2 × π × r
-        return 2 * 3.14 * self.radius
+        result = 2 * math.pi * self.radius
+        return round(result, 2)
 
 
 # 半径1の円
